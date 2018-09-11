@@ -2,7 +2,7 @@
 set -e
 
 case "$1" in
-    *.json) set -- ssserver -c "$@" -d start;;
+    *.json) set -- ssserver -c "$@" start;;
 esac
 
 exec "$@"
